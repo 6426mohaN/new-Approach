@@ -36,7 +36,7 @@ export default async function Home() {
       </div>
       <div>
       <nav className="bg-white p-4 mb-4 flex justify-between items-center">
-        <h1 className="text-2xl font-bold"><span className="text-blue-500">EDU</span> <span className="text-green-700">LMS1</span></h1>
+        <h1 className="text-2xl font-bold"><span className="text-blue-500">EDU</span> <span className="text-green-700">LMSS</span></h1>
         
         <div className="space-x-4">
           <Link href="#about" className="hover:text-blue-500">About</Link>

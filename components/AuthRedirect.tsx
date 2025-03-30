@@ -23,6 +23,10 @@ const AuthRedirect = () => {
       console.log("Admin Status:", adminStatus); // 🔍 Debug
       console.log("Teacher Status:", teacherStatus); // 🔍 Debug
 
+      if (pathname === "/search") {
+        return; // Exit early and prevent redirection
+      }
+
       if (adminStatus && !pathname.startsWith("/admin")) {
         router.push("/admin");
       } else if (teacherStatus && !pathname.startsWith("/teacher")) {

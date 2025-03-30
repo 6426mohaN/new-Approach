@@ -62,6 +62,8 @@ const Sidebar = dynamic(() => import("@/components/Sidebar"), { ssr: false });
 
 const Dashboardlayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
+  const showAuthRedirect = pathname !== "/search"; // Exclude AuthRedirect for /search
+
 
   return (
     <div className="h-full">
@@ -84,7 +86,7 @@ const Dashboardlayout = ({ children }: { children: React.ReactNode }) => {
 
 
       {/* Auth Redirect */}
-      <AuthRedirect />
+      {showAuthRedirect && <AuthRedirect />}
     </div>
   );
 };
