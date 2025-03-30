@@ -111,7 +111,7 @@ export const CourseSidebar = async ({ course, progressCount }: CourseSidebarProp
                     </div>
                 )}
             </div>
-            <div className="flex flex-col w-full h-full justify-between">
+            <div className="flex flex-col w-full h-screen md:h-full justify-between overflow-auto">
                 {course.chapters.map((chapter) => (
                     <CourseSidebarItem
                         key={chapter.id}
